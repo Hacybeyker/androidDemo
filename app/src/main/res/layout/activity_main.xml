@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:text="Anterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botonAnterior"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:text="Siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botonSiguiente"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+    <ImageView
+        android:src="@drawable/alumno1"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:id="@+id/imageAnimal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textApellido"
+        android:gravity="center_horizontal"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignLeft="@+id/textNombre"
+        android:layout_alignStart="@+id/textNombre" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Apellido"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignStart="@+id/textView1" />
+
+    <TextView
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textNombre"
+        android:gravity="center_horizontal"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toLeftOf="@+id/botonSiguiente"
+        android:layout_toStartOf="@+id/botonSiguiente" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nombre"
+        android:id="@+id/textView1"
+        android:layout_above="@+id/textApellido"
+        android:layout_toLeftOf="@+id/textNombre"
+        android:layout_toStartOf="@+id/textNombre"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DNI:"
+        android:id="@+id/textView4"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textDni"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/textApellido"
+        android:layout_alignStart="@+id/textApellido" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Drieccion"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView4"
+        android:layout_toRightOf="@+id/botonAnterior"
+        android:layout_toEndOf="@+id/botonAnterior"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textDireccion"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignLeft="@+id/textDni"
+        android:layout_alignStart="@+id/textDni" />
+</RelativeLayout>
